@@ -6,7 +6,7 @@ import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
 const api_key = process.env.REACT_APP_API_KEY;
 
 
-const AllNews = ({ data, handleGetAllNewsBySearch }: any) => {
+const AllNews = ({ news, handleGetAllNewsBySearch }: any) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
 
@@ -47,7 +47,7 @@ const AllNews = ({ data, handleGetAllNewsBySearch }: any) => {
                     </ul>
                 )}
             </div>
-            {data?.map((each: any, idx: number) => {
+            {news.map((each: any, idx: number) => {
                 const { author, url, urlToImage, publishedAt, title, description, source } = each;
                 const { name } = source;
                 return (

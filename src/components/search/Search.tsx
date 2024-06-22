@@ -5,8 +5,6 @@ import { FaSearch } from 'react-icons/fa';
 
 
 const Search = ({ query, handleSearch, handleChange }: any) => {
-
-
     return (
         <div className="search-bar">
             <input

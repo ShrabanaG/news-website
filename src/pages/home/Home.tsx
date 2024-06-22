@@ -43,8 +43,14 @@ const Home = () => {
     }, [])
 
     return (
-        <div className="page">
-            <Search query={query} handleSearch={handleSearch} handleChange={handleInputChange} />
+        <div className="page p-4">
+            <div className="title flex items-center justify-between">
+                <div className="text-[1rem] bg-primaryColor text-white p-2 rounded-sm">Breaking News</div>
+                <div className="filter">
+
+                </div>
+            </div>
+
             <AllNews news={news} handleGetAllNewsBySearch={handleGetAllNewsBySearch} />
         </div>
     )

@@ -15,7 +15,7 @@ type CardProps = {
 const Card = ({ author, url, image, publishedAt, title, description, source }: CardProps) => {
     return (
         <div>
-            <div className="card" style={{ width: "500px", display: 'flex', justifyContent: "between" }}>
+            <div className="card-container" >
                 <img src={image} alt={title} style={{ width: "300px", height: "300px" }} />
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>

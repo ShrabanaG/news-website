@@ -47,6 +47,13 @@ const Home = () => {
             <div className="title flex items-center justify-between">
                 <div className="text-[1rem] bg-primaryColor text-white p-2 rounded-sm">Breaking News</div>
                 <div className="filter">
+                    <span>
+                        <button className="dropdown-toggle bg-primaryColor text-white rounded-sm p-2">
+                            Category
+                        </button>
+                        {/* {isMenuOpen ? <BsChevronUp className="dropdown-icon" /> : <BsChevronDown className="dropdown-icon" />} */}
+                    </span>
+                    {/* <span>{searchTerm}</span> */}
 
                 </div>
             </div>
